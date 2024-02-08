@@ -1,2 +1,12 @@
 node_modules
 dist
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+examples/
+__snapshots__/

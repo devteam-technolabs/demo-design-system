@@ -1,5 +1,5 @@
-import { expect, test } from 'vitest'
-import { Card } from '../components/Card';
+import { test, expect } from '@playwright/experimental-ct-react';
+import { Card } from '../components/Card/Card';
   // Returns an article element with an image, title and children.
     test('should return an article element with an image, title and children', () => {
         // Arrange
