@@ -88,6 +88,53 @@ The project is structured as follows:
 - `dist/`: Output directory for production build.
 - `public/`: Static assets.
 
+### Install from the command line:
+
+To install the component library from the command line, you can use npm:
+
+```bash
+npm install @devteaminvo/design-system@1.0.0
+```
+
+Replace `@devteaminvo/design-system` with the appropriate package name and version.
+
+Learn more about npm packages [here](https://docs.npmjs.com/about-packages-and-modules).
+
+### Install via package.json:
+
+You can also add the component library as a dependency in your `package.json` file:
+
+```json
+{
+  "dependencies": {
+    "@devteaminvo/design-system": "1.0.0"
+  }
+}
+```
+
+Replace `@devteaminvo/design-system` with the appropriate package name and version.
+
+## Usage
+
+Once you have installed the library, you can start using its components in your project.
+
+1. Import the components you need into your project's codebase. For example:
+
+   ```javascript
+   import { Button, Card } from '@devteaminvo/design-system';
+   ```
+
+   Replace `'@devteaminvo/design-system'` with the appropriate path or package name based on your project's setup.
+
+2. Use the imported components in your project's code:
+
+   ```javascript
+   <Button onClick={handleClick}>Click Me</Button>
+   ```
+
+   This example assumes that `Button` is a component provided by the library, and `handleClick` is a function defined in your project.
+
+3. Customize the components as needed to fit with the overall look and feel of your project. You may need to apply additional styling or configurations depending on your requirements.
 ## Contributing
 
 Feel free to contribute to this project. Create issues for bugs or feature requests, and submit pull requests to improve the code.
