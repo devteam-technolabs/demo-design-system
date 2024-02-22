@@ -10,3 +10,4 @@ dist
 /playwright/.cache/
 examples/
 __snapshots__/
+package-lock.json

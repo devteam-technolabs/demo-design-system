@@ -41,32 +41,15 @@ npm run dev
 
 This will launch the development server and you can view your components in the browser.
 
-### Ladle
-
-lalde is a tool for developing and testing your React components in an environment that's isolated and faster than most real-world applications
-
-```bash
-npx ladle serve
-```
-
-Ladle.dev served at http://localhost:61000/ to see your component documentation.
 
 ### Unit Testing
 
 Playwright is used for unit testing. Run the following command to execute the tests:
 
 ```bash
-npm run test-ct
+npm run test
 ```
-
 This will run Playwright tests and provide feedback on the status of your components.
-
-For playwright HTML use:
-
-```bash
-npx playwright show-report
-```
-View Page Will Host ON: http://localhost:9323
 
 ### Building
 
@@ -84,7 +67,7 @@ The project is structured as follows:
 
 - `src/`: Contains your React components.
 - `src/tests/`: Holds Playwright test files.
-- `src/ladle/`: Configurations and stories for ladle.
+- `src/stories/`: Configurations and stories for ladle.
 - `dist/`: Output directory for production build.
 - `public/`: Static assets.
 
