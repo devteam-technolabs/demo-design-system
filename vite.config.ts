@@ -3,15 +3,18 @@ import react from "@vitejs/plugin-react-swc";
 import { resolve } from "path";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
-import { peerDependencies, dependencies } from './package.json'
+import { peerDependencies, dependencies } from './package.json';
 import tailwindcss from "tailwindcss";
+// import reactDocgenTypescript from "@joshwooding/vite-plugin-react-docgen-typescript";
+
 
 export default defineConfig ({
   plugins: [
     react(),
     dts({
       include: ['src/**/*'],
-    })
+    }),
+    // reactDocgenTypescript()
   ],
   css: {
     postcss: {
@@ -20,7 +23,7 @@ export default defineConfig ({
   },
   build: {
     lib: {
-      entry: resolve(__dirname, 'src', 'index.ts'),
+      entry: resolve(__dirname, 'src/components/', 'index.ts'),
       formats: ['es', 'cjs'],
       fileName: (ext) => `index.${ext}.ts`,
     },

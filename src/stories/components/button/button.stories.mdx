@@ -1,7 +1,8 @@
 import React from 'react';
 import { Meta, Story } from '@ladle/react';
-import { Button, buttonVariants } from '../../../components/Button/Button';
+import Button from '../../../components/Button/Button';
 import "../../../index.scss";
+import ButtonTableInfo from "../../../lib/table-docgen.tsx";
 
 <Meta title="Button Docs"/>
 
@@ -13,323 +14,46 @@ The Button component is a versatile button element that can be customized with d
 
 You can use the `Button` component with various props to customize its appearance and behavior.
 
-
-```jsx
-# Default
-<Button variant="default" size="default"> Default </Button>
-```
-<Story name="Default">
-    <Button>Default</Button>
-    <table className="w-full border-collapse border border-gray-300">
-  <thead>
-    <tr>
-      <th className="border border-gray-300 py-2 px-4">Name</th>
-      <th className="border border-gray-300 py-2 px-4">Description</th>
-      <th className="border border-gray-300 py-2 px-4">Default</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td className="border border-gray-300 py-2 px-4 font-semibold">Default</td>
-      <td className="border border-gray-300 py-2 px-4">The default button style is characterized by its primary color scheme and standard size, suitable for general use cases.</td>
-      <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md">false</span></td>
-    </tr>
-     <tr>
-      <td className="border border-gray-300 py-2 px-4 font-semibold">Label</td>
-      <td className="border border-gray-300 py-2 px-4">Button label is Default</td>
-      <td className="border border-gray-300 py-2 px-4"> - </td>
-    </tr>
-    <tr>
-      <td className="border border-gray-300 py-2 px-4 font-semibold">Background Color</td>
-      <td className="border border-gray-300 py-2 px-4">Primary color</td>
-      <td className="border border-gray-300 py-2 px-4"> - </td>
-    </tr>
-    <tr>
-      <td className="border border-gray-300 py-2 px-4 font-semibold">Size</td>
-      <td className="border border-gray-300 py-2 px-4">Default size button</td>
-      <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md bg-red-100">Default</span></td>
-    </tr>
-  </tbody>
-</table>
-</Story>
+<ButtonTableInfo/>
 
 
 ```jsx
 # Destructive
 <Button variant="destructive"> Destructive </Button>
 ```
-<Story name="Destructive">
-       <Button variant="destructive">Destructive</Button>
-   
- <table className="w-full border-collapse border border-gray-300">
-  <thead>
-    <tr>
-      <th className="border border-gray-300 py-2 px-4">Name</th>
-      <th className="border border-gray-300 py-2 px-4">Description</th>
-      <th className="border border-gray-300 py-2 px-4">Default</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td className="border border-gray-300 py-2 px-4 font-semibold">Destructive</td>
-      <td className="border border-gray-300 py-2 px-4">The Destructive button variant signifies actions with potentially harmful consequences, featuring bold colors and styles.</td>
-      <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md">false</span></td>
-    </tr>
-     <tr>
-      <td className="border border-gray-300 py-2 px-4 font-semibold">Label</td>
-      <td className="border border-gray-300 py-2 px-4">Button label is Destructive</td>
-      <td className="border border-gray-300 py-2 px-4"> - </td>
-    </tr>
-    <tr>
-      <td className="border border-gray-300 py-2 px-4 font-semibold">Background Color</td>
-      <td className="border border-gray-300 py-2 px-4">Destructive color</td>
-      <td className="border border-gray-300 py-2 px-4"> - </td>
-    </tr>
-    <tr>
-      <td className="border border-gray-300 py-2 px-4 font-semibold">Size</td>
-      <td className="border border-gray-300 py-2 px-4">Default size button</td>
-      <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md bg-red-100">Default</span></td>
-    </tr>
-  </tbody>
-</table>
-</Story>
 
 
 ```jsx
 # Outline
 <Button variant="outline"> Outline </Button>
 ```
-<Story name="Outline">
-        <Button variant="outline">Outline</Button>
-        <table className="w-full border-collapse border border-gray-300">
-        <thead>
-            <tr>
-                <th className="border border-gray-300 py-2 px-4">Name</th>
-                <th className="border border-gray-300 py-2 px-4">Description</th>
-                <th className="border border-gray-300 py-2 px-4">Default</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Outline</td>
-                <td className="border border-gray-300 py-2 px-4">The Outline button variant features a transparent background with a border, providing a distinct appearance when hovered over.</td>
-                <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md">false</span></td>
-            </tr>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Label</td>
-                <td className="border border-gray-300 py-2 px-4">Button label is Outline</td>
-                <td className="border border-gray-300 py-2 px-4"> - </td>
-            </tr>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Background Color</td>
-                <td className="border border-gray-300 py-2 px-4">Transparent background with border</td>
-                <td className="border border-gray-300 py-2 px-4"> - </td>
-            </tr>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Size</td>
-                <td className="border border-gray-300 py-2 px-4">Default size button</td>
-                <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md bg-red-100">Default</span></td>
-            </tr>
-        </tbody>
-    </table>
-</Story>
 
 
 ```jsx
 # Secondary
 <Button variant="secondary"> Secondary </Button>
 ```
-<Story name="Secondary">
-     <Button variant="secondary"> Secondary </Button>
-     <table className="w-full border-collapse border border-gray-300">
-        <thead>
-            <tr>
-                <th className="border border-gray-300 py-2 px-4">Name</th>
-                <th className="border border-gray-300 py-2 px-4">Description</th>
-                <th className="border border-gray-300 py-2 px-4">Default</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Secondary</td>
-                <td className="border border-gray-300 py-2 px-4">The Secondary button variant features a background color and text color defined as secondary, providing a distinct appearance.</td>
-                <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md">false</span></td>
-            </tr>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Label</td>
-                <td className="border border-gray-300 py-2 px-4">Button label is Secondary</td>
-                <td className="border border-gray-300 py-2 px-4"> - </td>
-            </tr>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Background Color</td>
-                <td className="border border-gray-300 py-2 px-4">Secondary background color</td>
-                <td className="border border-gray-300 py-2 px-4"> - </td>
-            </tr>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Size</td>
-                <td className="border border-gray-300 py-2 px-4">Default size button</td>
-                <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md bg-red-100">Default</span></td>
-            </tr>
-        </tbody>
-    </table>
-</Story>
 
 
 ```jsx
 # Ghost
 <Button variant="ghost"> Ghost </Button>
 ```
-<Story name="Ghost">
-       <Button variant="ghost"> Ghost </Button>
-        <table className="w-full border-collapse border border-gray-300">
-        <thead>
-            <tr>
-                <th className="border border-gray-300 py-2 px-4">Name</th>
-                <th className="border border-gray-300 py-2 px-4">Description</th>
-                <th className="border border-gray-300 py-2 px-4">Default</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Ghost</td>
-                <td className="border border-gray-300 py-2 px-4">The Ghost button variant features transparent background and accent-colored text, providing a subtle and elegant appearance.</td>
-                <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md">false</span></td>
-            </tr>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Label</td>
-                <td className="border border-gray-300 py-2 px-4">Button label is Ghost</td>
-                <td className="border border-gray-300 py-2 px-4"> - </td>
-            </tr>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Background Color</td>
-                <td className="border border-gray-300 py-2 px-4">Transparent background</td>
-                <td className="border border-gray-300 py-2 px-4"> - </td>
-            </tr>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Size</td>
-                <td className="border border-gray-300 py-2 px-4">Default size button</td>
-                <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md bg-red-100">Default</span></td>
-            </tr>
-        </tbody>
-    </table>
-</Story>
-
 
 ```jsx
 # Link
 <Button variant="link"> Link </Button>
 ```
-<Story name="Link">
-     <Button variant="link"> Link </Button>
-      <table className="w-full border-collapse border border-gray-300">
-        <thead>
-            <tr>
-                <th className="border border-gray-300 py-2 px-4">Name</th>
-                <th className="border border-gray-300 py-2 px-4">Description</th>
-                <th className="border border-gray-300 py-2 px-4">Default</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Link</td>
-                <td className="border border-gray-300 py-2 px-4">The Link button variant resembles a hyperlink, featuring underlined text with an offset and primary color.</td>
-                <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md">false</span></td>
-            </tr>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Label</td>
-                <td className="border border-gray-300 py-2 px-4">Button label is Link</td>
-                <td className="border border-gray-300 py-2 px-4"> - </td>
-            </tr>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Background Color</td>
-                <td className="border border-gray-300 py-2 px-4">Transparent background</td>
-                <td className="border border-gray-300 py-2 px-4"> - </td>
-            </tr>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Size</td>
-                <td className="border border-gray-300 py-2 px-4">Default size button</td>
-                <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md bg-red-100">Default</span></td>
-            </tr>
-        </tbody>
-    </table>
-</Story>
 
 
 ```jsx
 # Small
 <Button variant="default"> Small </Button>
 ```
-<Story name="Small">
-    <Button size="sm"  variant="default">Small</Button>
-     <table className="w-full border-collapse border border-gray-300">
-  <thead>
-    <tr>
-      <th className="border border-gray-300 py-2 px-4">Name</th>
-      <th className="border border-gray-300 py-2 px-4">Description</th>
-      <th className="border border-gray-300 py-2 px-4">Default</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td className="border border-gray-300 py-2 px-4 font-semibold">Default</td>
-      <td className="border border-gray-300 py-2 px-4">The small button style is characterized by its primary color scheme and standard size, suitable for general use cases.</td>
-      <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md">false</span></td>
-    </tr>
-     <tr>
-      <td className="border border-gray-300 py-2 px-4 font-semibold">Label</td>
-      <td className="border border-gray-300 py-2 px-4">Button label is small</td>
-      <td className="border border-gray-300 py-2 px-4"> - </td>
-    </tr>
-    <tr>
-      <td className="border border-gray-300 py-2 px-4 font-semibold">Background Color</td>
-      <td className="border border-gray-300 py-2 px-4">Primary color</td>
-      <td className="border border-gray-300 py-2 px-4"> - </td>
-    </tr>
-    <tr>
-      <td className="border border-gray-300 py-2 px-4 font-semibold">Size</td>
-      <td className="border border-gray-300 py-2 px-4">Small size button</td>
-      <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md bg-red-100">Small</span></td>
-    </tr>
-  </tbody>
-</table>
-</Story>
 
 
 ```jsx
 # Large
 <Button variant="default"> Large </Button>
 ```
-<Story name="Large">
-       <Button size="lg"  variant="default">Large</Button>
-        <table className="w-full border-collapse border border-gray-300">
-        <thead>
-            <tr>
-                <th className="border border-gray-300 py-2 px-4">Name</th>
-                <th className="border border-gray-300 py-2 px-4">Description</th>
-                <th className="border border-gray-300 py-2 px-4">Default</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Large</td>
-                <td className="border border-gray-300 py-2 px-4">The Large button variant is characterized by its primary color scheme and larger size, suitable for emphasizing important actions or calls to action.</td>
-                <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md">false</span></td>
-            </tr>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Label</td>
-                <td className="border border-gray-300 py-2 px-4">Button label is Large</td>
-                <td className="border border-gray-300 py-2 px-4"> - </td>
-            </tr>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Background Color</td>
-                <td className="border border-gray-300 py-2 px-4">Primary color</td>
-                <td className="border border-gray-300 py-2 px-4"> - </td>
-            </tr>
-            <tr>
-                <td className="border border-gray-300 py-2 px-4 font-semibold">Size</td>
-                <td className="border border-gray-300 py-2 px-4">Large size button</td>
-                <td className="border border-gray-300 py-2 px-4"><span className="border p-1 rounded-md bg-red-100">Large</span></td>
-            </tr>
-        </tbody>
-    </table>
-</Story>
+
