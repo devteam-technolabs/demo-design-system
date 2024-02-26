@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story } from '@ladle/react';
-import  Button  from '../../../components/Button/Button';
+import  {Button}  from '../../../components/Button/Button';
 import "../../../index.scss";
 import { ControlType } from '@ladle/react';
 import ButtonProps from '../../../components/Button/type';

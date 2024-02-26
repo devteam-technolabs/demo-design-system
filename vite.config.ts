@@ -5,8 +5,6 @@ import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 import { peerDependencies, dependencies } from './package.json';
 import tailwindcss from "tailwindcss";
-// import reactDocgenTypescript from "@joshwooding/vite-plugin-react-docgen-typescript";
-
 
 export default defineConfig ({
   plugins: [
@@ -14,7 +12,6 @@ export default defineConfig ({
     dts({
       include: ['src/**/*'],
     }),
-    // reactDocgenTypescript()
   ],
   css: {
     postcss: {

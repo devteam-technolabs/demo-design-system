@@ -1,5 +1,5 @@
  import { test, expect } from '@playwright/experimental-ct-react';
-import Button from '../../../components/Button/Button';
+import {Button} from '../../../components/Button/Button';
 
 // Renders a button element with default props when no props are passed
 test('should render a button with default variant and size when no props are passed', async ({mount}) => {
