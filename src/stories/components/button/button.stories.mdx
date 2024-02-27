@@ -1,8 +1,8 @@
 import React from 'react';
 import { Meta, Story } from '@ladle/react';
-import { Button } from '@/components/Button/Button';
+import { Button } from '@/components/Button';
 import "@/index.scss";
-import PropsTable from "@/lib/table-docgen";
+import { PropsTable } from "@/components/PropsTable";
 import type from '@/type-schemas/Button/type';
 
 <Meta title="Button Docs"/>
@@ -15,7 +15,7 @@ The Button component is a versatile button element that can be customized with d
 
 You can use the `Button` component with various props to customize its appearance and behavior.
 
-<ButtonTableInfo {...type.children[0].children}/>
+<PropsTable {...type.children[0].children}/>
 
 ```jsx
 # Destructive

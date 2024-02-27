@@ -1,1 +1,2 @@
-export { Button, buttonVariants } from '../components/Button/Button';
+export * from './Button';
+export * from './PropsTable';

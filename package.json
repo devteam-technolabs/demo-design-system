@@ -17,7 +17,7 @@
     "./dist/style.css": "./dist/style.css"
   },
   "scripts": {
-    "generate:schemas": "node index.js",
+    "generate:schemas": "node docgen.js",
     "dev": "npm run generate:schemas && npx ladle serve && vite",
     "build": "tsc && vite build && npm run build:styles",
     "build:styles": "postcss ./src/index.scss -o ./dist/style.css",

@@ -1,15 +1,7 @@
-interface PropType {
-    name: string;
-    type: { name: string };
-    flags: { isOptional: boolean };
-    comment?: { summary?: [{ text?: string }] };
-}
+import React from 'react';
+import { PropsTableProps } from './type';
 
-interface PropsTableProps {
-    [key: string]: PropType;
-}
-
-const PropsTable: React.FC<PropsTableProps> = (props) => {
+export const PropsTable: React.FC<PropsTableProps> = (props) => {
     return (
         <>
             <table className="w-full border-separate mt-3 shadow-lg mb-6">
@@ -43,5 +35,3 @@ const PropsTable: React.FC<PropsTableProps> = (props) => {
         </>
     );
 }
-
-export default PropsTable;

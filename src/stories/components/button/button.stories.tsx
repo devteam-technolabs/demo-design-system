@@ -1,8 +1,8 @@
 import { Story } from '@ladle/react';
-import { Button } from '@components/Button/Button';
+import { Button } from '@components/Button';
 import "@index.scss";
 import { ControlType } from '@ladle/react';
-import { ButtonPropsType } from '@components/Button/type';
+import { ButtonPropsType } from '@components/Button';
 
 
 const buttonVariants = ["default", "destructive", "outline", "secondary", "ghost", "link"];
