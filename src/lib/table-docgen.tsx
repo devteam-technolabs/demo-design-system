@@ -14,9 +14,9 @@ import { ButtonPropsType } from '../components/Button/type';
                     </tr>
                 </thead>
                 <tbody>
-                    {Object.values(props).map((propName) => (
+                    {Object.values(props).map((propName,index) => (
                         
-                        <tr key={propName}>
+                        <tr key={index}>
                             <td className="border border-gray-300 py-2 px-4 font-semibold">{propName.name}</td>
                             <td className="border border-gray-300 py-2 px-4">
                                 <span className="border p-1 rounded-md bg-gray-50">{propName.type.name ? propName.type.name : 'None'}
