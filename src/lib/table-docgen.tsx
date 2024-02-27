@@ -74,3 +74,12 @@
 // export default ButtonTableInfo;
 
 
+export const PropsTable = (props={}) => {
+    return (
+        <div>
+            <h1>Props Table</h1>
+            <p>Props Table</p>
+        </div >
+    )
+
+}
