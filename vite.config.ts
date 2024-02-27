@@ -1,12 +1,13 @@
 //vite.config.js
 import react from "@vitejs/plugin-react-swc";
-import { resolve } from "path";
+import path, { resolve } from "path";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 import { peerDependencies, dependencies } from './package.json';
 import tailwindcss from "tailwindcss";
+const root = resolve(__dirname,"./src/");
 
-export default defineConfig ({
+export default defineConfig ({ 
   plugins: [
     react(),
     dts({
@@ -30,5 +31,9 @@ export default defineConfig ({
     },
     target: 'esnext',
     sourcemap: true
-  }
+  },
+  resolve :{
+    alias :{
+    "@" : path.resolve(root,"@")
+  }}
 });

@@ -1,85 +1,36 @@
-// import React from 'react';
-// import ButtonProps from '../components/Button/type';
-// // import reactDocgenTypescript from "@joshwooding/vite-plugin-react-docgen-typescript";
-// // import PropTypes from "prop-types";
+import { ButtonPropsType } from '../components/Button/type';
 
-// // interface PropDetails {
-// //     type: { name: string };
-// //     defaultValue: { value: any } | null;
-// //     required: boolean;
-// //     description: string;
-// // }
-
-// // const extractProps = (component: React.ReactElement): PropDetails => {
-// //     const info = reactDocgenTypescript(React.createElement(component.type));
-  
-// //     console
-// //     const propDetails: PropDetails = {
-// //       type: { name: info.props.type.name },
-// //       defaultValue: info.props.defaultValue || null,
-// //       required: info.props.required || false,
-// //       description: info.description || "No description",
-// //     };
-  
-// //     return propDetails;
-// //   };
-//  const ButtonTableInfo = ({ ...columns }: ButtonProps) => {
-
-// //     const componentProps: { [key: string]: PropDetails } = {};
-
-// //     columns.forEach((column) => {
-// //       const displayName = column.type.displayName;
-// //       if (displayName) {
-// //         componentProps[displayName] = extractProps(column);
-// //       }
-// //     });
-
-//     return (
-//         <>
-//             <table className="w-full  border-separate mt-3 shadow-lg mb-6">
-//                 <thead>
-//                     <tr>
-//                         <th className="border border-gray-300  bg-gray-100  py-2 px-4">Name</th>
-//                         <th className="border border-gray-300  bg-gray-100  py-2 px-4">Type</th>
-//                         <th className="border border-gray-300  bg-gray-100  py-2 px-4">Default</th>
-//                         <th className="border border-gray-300  bg-gray-100  py-2 px-4">Required</th>
-//                         <th className="border border-gray-300  bg-gray-100  py-2 px-4">Description</th>
-
-//                     </tr>
-//                 </thead>
-//                 <tbody>
-//                     {Object.entries(columns).map(([propName, propDetails]) => (
-//                         <tr key={propName}>
-//                             <td className="border border-gray-300 py-2 px-4 font-semibold">{propName}</td>
-//                             <td className="border border-gray-300 py-2 px-4">
-//                                 <span className="border p-1 rounded-md bg-gray-50">{propDetails.defaultValue ? propDetails.defaultValue.value : 'None'}
-//                                 </span>
-//                             </td>
-//                             <td className="border border-gray-300 py-2 px-4">{propDetails.required ? 'Yes' : 'No'}</td>
-//                             <td className="border border-gray-300 py-2 px-4">{propDetails.description}</td>
-//                             <td className="border border-gray-300 py-2 px-4">{propDetails.required ? 'Yes' : 'No'}
-
-//                             </td>
-//                         </tr>
-//                     ))}
-//                 </tbody>
-//             </table>
-//         </>
-//     )
-// }
-// // ButtonTableInfo.propTypes = {
-// //     columns: PropTypes.arrayOf(PropTypes.element).isRequired,
-// //   };
-
-// export default ButtonTableInfo;
-
-
-export const PropsTable = (props={}) => {
+ const ButtonTableInfo = (props : ButtonPropsType) => {
     return (
-        <div>
-            <h1>Props Table</h1>
-            <p>Props Table</p>
-        </div >
-    )
+        <>
+            <table className="w-full  border-separate mt-3 shadow-lg mb-6">
+                <thead>
+                    <tr>
+                        <th className="border border-gray-300  bg-gray-100  py-2 px-4">Name</th>
+                        <th className="border border-gray-300  bg-gray-100  py-2 px-4">Type</th>
+                        <th className="border border-gray-300  bg-gray-100  py-2 px-4">Required</th>
+                        <th className="border border-gray-300  bg-gray-100  py-2 px-4">Description</th>
 
+                    </tr>
+                </thead>
+                <tbody>
+                    {Object.values(props).map((propName) => (
+                        
+                        <tr key={propName}>
+                            <td className="border border-gray-300 py-2 px-4 font-semibold">{propName.name}</td>
+                            <td className="border border-gray-300 py-2 px-4">
+                                <span className="border p-1 rounded-md bg-gray-50">{propName.type.name ? propName.type.name : 'None'}
+                                </span>
+                            </td>
+                            <td className="border border-gray-300 py-2 px-4">{propName.flags.isOptional == 'NO' ? 'Yes' : 'No'}</td>
+                            <td className="border border-gray-300 py-2 px-4">{propName?.comment?.summary[0]?.text ? propName?.comment?.summary[0]?.text:"none"}
+                            </td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </>
+    )
 }
+
+export default ButtonTableInfo;

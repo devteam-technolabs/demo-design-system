@@ -1,21 +1,20 @@
-import React from 'react';
 import { Story } from '@ladle/react';
-import { Button } from '../../../components/Button/Button';
-import "../../../index.scss";
+import { Button } from '@components/Button/Button';
+import "@index.scss";
 import { ControlType } from '@ladle/react';
-import { ButtonPropsType } from '../../../components/Button/type';
+import { ButtonPropsType } from '@components/Button/type';
 
 
 const buttonVariants = ["default", "destructive", "outline", "secondary", "ghost", "link"];
 
-const createButtonStory = (storyLabel: string, defaultVariant: string, defaultSize: string) => {
+const createButtonStory = (storylabel: string, defaultVariant: string, defaultSize: string) => {
 
-  const ButtonStory = ({ label = storyLabel, variant = defaultVariant, size = defaultSize, onClick }: ButtonPropsType) => (
-    <Button variant={variant} size={size} onClick={onClick} label={storyLabel}>{label}</Button>
+  const ButtonStory = ({ label = storylabel, variant = defaultVariant, size = defaultSize, onClick }: ButtonPropsType) => (
+    <Button variant={variant} size={size} onClick={onClick} label={storylabel}>{label}</Button>
   );
 
   ButtonStory.args = {
-    label: storyLabel,
+    label: storylabel,
   };
 
   ButtonStory.argTypes = {
@@ -31,7 +30,12 @@ const createButtonStory = (storyLabel: string, defaultVariant: string, defaultSi
     },
     onClick: {
       action: "clicked",
-    }
+    },
+    background: {
+      control: { type: "background" },
+      options: ["purple", "blue", "white", "pink"],
+      defaultValue: "white",
+    },
   };
 
   return ButtonStory;
@@ -46,10 +50,10 @@ export const link: Story<{ label: string, variant: any, size: any; onClick: () =
 export const Small: Story<{ label: string, variant: any, size: any; onClick: () => void; }> = createButtonStory("Small", "default", "sm");
 export const Large: Story<{ label: string, variant: any, size: any; onClick: () => void; }> = createButtonStory("Large", "default", "lg");
 
-export const a11y: Story = () => (
+export const  a11y: Story = () => (
   <div>
     <Button variant="default" size="default" label={"Example Button"} onClick={function (): void {
       throw new Error('Function not implemented.');
-    }}>Example Button</Button>
+    } }>Example Button</Button>
   </div>
 );
