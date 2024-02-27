@@ -11,3 +11,4 @@ dist
 examples/
 __snapshots__/
 .history
+docs
