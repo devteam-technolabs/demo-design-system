@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/experimental-ct-react';
+import { resolve } from 'path';
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -26,6 +27,15 @@ export default defineConfig({
 
     /* Port to use for Playwright component endpoint. */
     ctPort: 3100,
+
+    ctViteConfig: {
+      resolve: {
+        alias: {
+          "@components": resolve('./src/components'),
+          "@lib": resolve('./src/lib'),
+        },
+      },
+    },
   },
 
   // /* Configure projects for major browsers */

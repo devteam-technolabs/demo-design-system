@@ -25,15 +25,28 @@ export default defineConfig({
       fileName: (ext) => `index.${ext}.ts`,
     },
     rollupOptions: {
-      external: [...Object.keys(peerDependencies), ...Object.keys(dependencies)],
-      output: { preserveModules: true, exports: 'named' },
+      external: (source) => {
+        // If the source starts with '@', it's an alias and should not be external
+        if (source.startsWith('@')) {
+          return false;
+        }
+        // Check if the source is listed in peerDependencies or dependencies
+        const allDeps = [...Object.keys(peerDependencies), ...Object.keys(dependencies)];
+        return allDeps.includes(source);
+      },
+      output: {
+        preserveModules: true,
+        exports: 'named',
+      },
     },
     target: 'esnext',
     sourcemap: true
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src")
+      "@": path.resolve(__dirname, "src"),
+      "@components": path.resolve(__dirname, "src/components"),
+      "@lib": path.resolve(__dirname, "src/lib")
     }
   }
 });
