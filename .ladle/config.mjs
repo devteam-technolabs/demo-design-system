@@ -5,5 +5,5 @@ export default {
       enabled: true,
     },
   },
-  outDir: "gh-pages",
+  outDir: "docs",
 };
