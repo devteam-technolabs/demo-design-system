@@ -31,7 +31,7 @@ async function main() {
       fs.mkdirSync(componentOutputDir, { recursive: true });
 
       // Generate JSON output for the component
-      await app.generateJson(project.children[0]?.children, jsonOutput);
+      await app.generateJson(project, jsonOutput);
     }
   }
 }
