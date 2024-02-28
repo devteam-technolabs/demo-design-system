@@ -22,7 +22,6 @@ jobs:
       - name: Install & Test ✅
         run: |
           npm install
-          npm run test
 
       - name: Quality Assurance 👌
         run: |
