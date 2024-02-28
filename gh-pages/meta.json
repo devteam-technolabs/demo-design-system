@@ -1,0 +1,119 @@
+{
+  "about": {
+    "homepage": "https://www.ladle.dev",
+    "github": "https://github.com/tajo/ladle",
+    "version": 1
+  },
+  "stories": {
+    "button--button-docs": {
+      "name": "Button docs",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 22,
+      "locEnd": 30,
+      "filePath": "src/stories/components/button/button.stories.mdx",
+      "namedExport": "MDXContent",
+      "meta": {}
+    },
+    "button--a11y": {
+      "name": "A11y",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 53,
+      "locEnd": 59,
+      "filePath": "src/stories/components/button/button.stories.tsx",
+      "namedExport": "a11y",
+      "meta": {}
+    },
+    "button--default": {
+      "name": "Default",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 44,
+      "locEnd": 44,
+      "filePath": "src/stories/components/button/button.stories.tsx",
+      "namedExport": "Default",
+      "meta": {}
+    },
+    "button--destructive": {
+      "name": "Destructive",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 45,
+      "locEnd": 45,
+      "filePath": "src/stories/components/button/button.stories.tsx",
+      "namedExport": "Destructive",
+      "meta": {}
+    },
+    "button--ghost": {
+      "name": "Ghost",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 48,
+      "locEnd": 48,
+      "filePath": "src/stories/components/button/button.stories.tsx",
+      "namedExport": "Ghost",
+      "meta": {}
+    },
+    "button--large": {
+      "name": "Large",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 51,
+      "locEnd": 51,
+      "filePath": "src/stories/components/button/button.stories.tsx",
+      "namedExport": "Large",
+      "meta": {}
+    },
+    "button--link": {
+      "name": "Link",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 49,
+      "locEnd": 49,
+      "filePath": "src/stories/components/button/button.stories.tsx",
+      "namedExport": "link",
+      "meta": {}
+    },
+    "button--outline": {
+      "name": "Outline",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 46,
+      "locEnd": 46,
+      "filePath": "src/stories/components/button/button.stories.tsx",
+      "namedExport": "Outline",
+      "meta": {}
+    },
+    "button--secondary": {
+      "name": "Secondary",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 47,
+      "locEnd": 47,
+      "filePath": "src/stories/components/button/button.stories.tsx",
+      "namedExport": "Secondary",
+      "meta": {}
+    },
+    "button--small": {
+      "name": "Small",
+      "levels": [
+        "Button"
+      ],
+      "locStart": 50,
+      "locEnd": 50,
+      "filePath": "src/stories/components/button/button.stories.tsx",
+      "namedExport": "Small",
+      "meta": {}
+    }
+  }
+}
