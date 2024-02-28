@@ -38,6 +38,7 @@ jobs:
           folder: docs
           env:
           ACCESS_TOKEN: ${{ secrets.YOUR_DEPLOY_TOKEN_SECRET_NAME }}
+          REPO_URL: https://github.com/devteam-technolabs/demo-design-system
 
       - name: Ladle Preview 🍴
         run: 
