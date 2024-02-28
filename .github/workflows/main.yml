@@ -36,6 +36,8 @@ jobs:
         with:
           branch: main
           folder: docs
+          env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Ladle Preview 🍴
         run: 
