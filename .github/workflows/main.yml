@@ -36,3 +36,9 @@ jobs:
         with:
           branch: main
           folder: docs
+
+      - name: Ladle Preview 🍴
+        run: 
+            npx ladle preview -p 8080  # Adjust the port number as needed
+          
+  
