@@ -37,7 +37,7 @@ jobs:
           branch: main
           folder: docs
           env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.YOUR_DEPLOY_TOKEN_SECRET_NAME }}
 
       - name: Ladle Preview 🍴
         run: 
