@@ -22,5 +22,6 @@ export default {
   },
   viteConfig: process.cwd() + "/vite.config.ladle.ts",
   outDir: "docs",
-
+  port: 3000,
+  previewPort: 8080
 };
