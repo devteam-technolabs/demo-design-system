@@ -22,15 +22,16 @@ async function main() {
     });
 
     const project = await app.convert();
+
     if (project) {
       const componentOutputDir = path.join(outputDir, componentName);
-      const jsonOutput = path.join(componentOutputDir, "type.json");
+      const jsonOutput = path.join(componentOutputDir, componentName + "Type.json");
 
       // Ensure the output directory exists
       fs.mkdirSync(componentOutputDir, { recursive: true });
 
       // Generate JSON output for the component
-      await app.generateJson(project, jsonOutput);
+      await app.generateJson(project.children[0]?.children, jsonOutput);
     }
   }
 }

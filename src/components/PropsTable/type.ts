@@ -1,10 +1,6 @@
-export interface PropType {
+export interface PropsTableProps {
     name: string;
     type: { name: string };
     flags: { isOptional: boolean };
     comment?: { summary?: [{ text?: string }] };
-}
-
-export interface PropsTableProps {
-    [key: string]: PropType;
 }
