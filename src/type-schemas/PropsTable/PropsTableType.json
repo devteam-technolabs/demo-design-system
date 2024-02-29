@@ -24,7 +24,8 @@
 						{
 							"fileName": "type.ts",
 							"line": 5,
-							"character": 4
+							"character": 4,
+							"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/PropsTable/type.ts#L5"
 						}
 					],
 					"type": {
@@ -48,7 +49,8 @@
 										{
 											"fileName": "type.ts",
 											"line": 5,
-											"character": 16
+											"character": 16,
+											"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/PropsTable/type.ts#L5"
 										}
 									],
 									"type": {
@@ -75,7 +77,8 @@
 																{
 																	"fileName": "type.ts",
 																	"line": 5,
-																	"character": 29
+																	"character": 29,
+																	"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/PropsTable/type.ts#L5"
 																}
 															],
 															"type": {
@@ -96,7 +99,8 @@
 														{
 															"fileName": "type.ts",
 															"line": 5,
-															"character": 27
+															"character": 27,
+															"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/PropsTable/type.ts#L5"
 														}
 													]
 												}
@@ -117,7 +121,8 @@
 								{
 									"fileName": "type.ts",
 									"line": 5,
-									"character": 14
+									"character": 14,
+									"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/PropsTable/type.ts#L5"
 								}
 							]
 						}
@@ -133,7 +138,8 @@
 						{
 							"fileName": "type.ts",
 							"line": 4,
-							"character": 4
+							"character": 4,
+							"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/PropsTable/type.ts#L4"
 						}
 					],
 					"type": {
@@ -155,7 +161,8 @@
 										{
 											"fileName": "type.ts",
 											"line": 4,
-											"character": 13
+											"character": 13,
+											"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/PropsTable/type.ts#L4"
 										}
 									],
 									"type": {
@@ -176,7 +183,8 @@
 								{
 									"fileName": "type.ts",
 									"line": 4,
-									"character": 11
+									"character": 11,
+									"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/PropsTable/type.ts#L4"
 								}
 							]
 						}
@@ -192,7 +200,8 @@
 						{
 							"fileName": "type.ts",
 							"line": 2,
-							"character": 4
+							"character": 4,
+							"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/PropsTable/type.ts#L2"
 						}
 					],
 					"type": {
@@ -210,7 +219,8 @@
 						{
 							"fileName": "type.ts",
 							"line": 3,
-							"character": 4
+							"character": 4,
+							"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/PropsTable/type.ts#L3"
 						}
 					],
 					"type": {
@@ -232,7 +242,8 @@
 										{
 											"fileName": "type.ts",
 											"line": 3,
-											"character": 12
+											"character": 12,
+											"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/PropsTable/type.ts#L3"
 										}
 									],
 									"type": {
@@ -253,7 +264,8 @@
 								{
 									"fileName": "type.ts",
 									"line": 3,
-									"character": 10
+									"character": 10,
+									"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/PropsTable/type.ts#L3"
 								}
 							]
 						}
@@ -275,7 +287,8 @@
 				{
 					"fileName": "type.ts",
 					"line": 1,
-					"character": 17
+					"character": 17,
+					"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/PropsTable/type.ts#L1"
 				}
 			]
 		}

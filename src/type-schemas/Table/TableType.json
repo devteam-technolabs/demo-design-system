@@ -1,0 +1,423 @@
+{
+	"id": 23,
+	"name": "component-library",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 24,
+			"name": "TablePropsType",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "type.ts",
+					"line": 2,
+					"character": 12
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 25,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"children": [
+						{
+							"id": 26,
+							"name": "TableData",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "type.ts",
+									"line": 4,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reflection",
+									"declaration": {
+										"id": 27,
+										"name": "__type",
+										"variant": "declaration",
+										"kind": 65536,
+										"flags": {},
+										"children": [
+											{
+												"id": 38,
+												"name": "last_call_date",
+												"variant": "declaration",
+												"kind": 1024,
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "type.ts",
+														"line": 15,
+														"character": 8
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											},
+											{
+												"id": 40,
+												"name": "last_call_icons",
+												"variant": "declaration",
+												"kind": 1024,
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "type.ts",
+														"line": 17,
+														"character": 8
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											},
+											{
+												"id": 35,
+												"name": "notification_Info",
+												"variant": "declaration",
+												"kind": 1024,
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "type.ts",
+														"line": 12,
+														"character": 8
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											},
+											{
+												"id": 30,
+												"name": "notification_id",
+												"variant": "declaration",
+												"kind": 1024,
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "type.ts",
+														"line": 7,
+														"character": 8
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											},
+											{
+												"id": 36,
+												"name": "notification_time",
+												"variant": "declaration",
+												"kind": 1024,
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "type.ts",
+														"line": 13,
+														"character": 8
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											},
+											{
+												"id": 29,
+												"name": "notification_type_icon",
+												"variant": "declaration",
+												"kind": 1024,
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "type.ts",
+														"line": 6,
+														"character": 8
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											},
+											{
+												"id": 33,
+												"name": "notification_unit",
+												"variant": "declaration",
+												"kind": 1024,
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "type.ts",
+														"line": 10,
+														"character": 8
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											},
+											{
+												"id": 28,
+												"name": "notification_unread",
+												"variant": "declaration",
+												"kind": 1024,
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "type.ts",
+														"line": 5,
+														"character": 8
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "boolean"
+												}
+											},
+											{
+												"id": 32,
+												"name": "notification_value",
+												"variant": "declaration",
+												"kind": 1024,
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "type.ts",
+														"line": 9,
+														"character": 8
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											},
+											{
+												"id": 34,
+												"name": "notification_value_icon",
+												"variant": "declaration",
+												"kind": 1024,
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "type.ts",
+														"line": 11,
+														"character": 8
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											},
+											{
+												"id": 31,
+												"name": "patient_name",
+												"variant": "declaration",
+												"kind": 1024,
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "type.ts",
+														"line": 8,
+														"character": 8
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											},
+											{
+												"id": 37,
+												"name": "tracked_time",
+												"variant": "declaration",
+												"kind": 1024,
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "type.ts",
+														"line": 14,
+														"character": 8
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											},
+											{
+												"id": 39,
+												"name": "tracked_time_icon",
+												"variant": "declaration",
+												"kind": 1024,
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "type.ts",
+														"line": 16,
+														"character": 8
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"groups": [
+											{
+												"title": "Properties",
+												"children": [
+													38,
+													40,
+													35,
+													30,
+													36,
+													29,
+													33,
+													28,
+													32,
+													34,
+													31,
+													37,
+													39
+												]
+											}
+										],
+										"sources": [
+											{
+												"fileName": "type.ts",
+												"line": 4,
+												"character": 15
+											}
+										]
+									}
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								26
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "type.ts",
+							"line": 2,
+							"character": 29
+						}
+					]
+				}
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Type Aliases",
+			"children": [
+				24
+			]
+		}
+	],
+	"packageName": "component-library",
+	"symbolIdMap": {
+		"23": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": ""
+		},
+		"24": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "TablePropsType"
+		},
+		"25": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type"
+		},
+		"26": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type.TableData"
+		},
+		"27": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type"
+		},
+		"28": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type.notification_unread"
+		},
+		"29": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type.notification_type_icon"
+		},
+		"30": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type.notification_id"
+		},
+		"31": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type.patient_name"
+		},
+		"32": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type.notification_value"
+		},
+		"33": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type.notification_unit"
+		},
+		"34": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type.notification_value_icon"
+		},
+		"35": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type.notification_Info"
+		},
+		"36": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type.notification_time"
+		},
+		"37": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type.tracked_time"
+		},
+		"38": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type.last_call_date"
+		},
+		"39": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type.tracked_time_icon"
+		},
+		"40": {
+			"sourceFileName": "src/components/Table/type.ts",
+			"qualifiedName": "__type.last_call_icons"
+		}
+	}
+}

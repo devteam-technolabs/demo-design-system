@@ -32,7 +32,7 @@
 						"summary": [
 							{
 								"kind": "text",
-								"text": "this is test comment for description for this type"
+								"text": "this is test comment for description"
 							}
 						]
 					},
@@ -40,7 +40,8 @@
 						{
 							"fileName": "type.ts",
 							"line": 15,
-							"character": 2
+							"character": 2,
+							"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/Button/type.ts#L15"
 						}
 					],
 					"type": {
@@ -58,7 +59,8 @@
 						{
 							"fileName": "type.ts",
 							"line": 16,
-							"character": 2
+							"character": 2,
+							"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/Button/type.ts#L16"
 						}
 					],
 					"type": {
@@ -76,7 +78,8 @@
 						{
 							"fileName": "type.ts",
 							"line": 19,
-							"character": 2
+							"character": 2,
+							"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/Button/type.ts#L19"
 						}
 					],
 					"type": {
@@ -91,7 +94,8 @@
 								{
 									"fileName": "type.ts",
 									"line": 19,
-									"character": 11
+									"character": 11,
+									"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/Button/type.ts#L19"
 								}
 							],
 							"signatures": [
@@ -105,7 +109,8 @@
 										{
 											"fileName": "type.ts",
 											"line": 19,
-											"character": 11
+											"character": 11,
+											"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/Button/type.ts#L19"
 										}
 									],
 									"type": {
@@ -132,7 +137,8 @@
 						{
 							"fileName": "type.ts",
 							"line": 18,
-							"character": 2
+							"character": 2,
+							"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/Button/type.ts#L18"
 						}
 					],
 					"type": {
@@ -155,7 +161,8 @@
 						{
 							"fileName": "type.ts",
 							"line": 17,
-							"character": 2
+							"character": 2,
+							"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/Button/type.ts#L17"
 						}
 					],
 					"type": {
@@ -185,7 +192,8 @@
 				{
 					"fileName": "type.ts",
 					"line": 11,
-					"character": 17
+					"character": 17,
+					"url": "https://github.com/devteaminvo/design-system/blob/8df0748/src/components/Button/type.ts#L11"
 				}
 			],
 			"extendedTypes": [

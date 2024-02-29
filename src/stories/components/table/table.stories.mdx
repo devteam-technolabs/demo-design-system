@@ -1,0 +1,44 @@
+import { Meta } from '@ladle/react';
+
+<Meta title="Table docs" />
+
+# Table Component Documentation
+
+## Description
+
+This table component displays various notifications for patients along with relevant information such as notification time, time spent, and last call details.
+
+## Props
+
+
+### TableData 
+An array of objects representing the data to be displayed in the table. Each object contains various properties such as `notification_unread`, `notification_type_icon`, `notification_id`, etc.
+```jsx
+(Array<{ notification_unread: boolean, notification_type_icon: string, notification_id: string, patient_name: string, notification_value: string, 
+notification_unit: string, notification_value_icon: string, notification_Info: string, notification_time: string, tracked_time: string, 
+last_call_date: string, tracked_time_icon: string, last_call_icons: string }>)
+```
+  
+## Usage
+
+```jsx
+import { Table } from '@components/Table/Table';
+
+  <Table
+    TableData: {
+        notification_unread: boolean
+        notification_type_icon: string
+        notification_id: string
+        patient_name: string
+        notification_value: string
+        notification_unit: string
+        notification_value_icon: string
+        notification_Info: string
+        notification_time: string
+        tracked_time: string
+        last_call_date: string
+        tracked_time_icon: string
+        last_call_icons : string
+    }[]
+  />
+

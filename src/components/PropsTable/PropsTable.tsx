@@ -4,13 +4,13 @@ import { PropsTableProps } from './type';
 export const PropsTable: React.FC<PropsTableProps> = (props) => {
     return (
         <>
-            <table className="w-full border-separate mt-3 shadow-lg mb-6">
+            <table className="w-full border-separate mt-3 shadow-xl mb-6">
                 <thead>
                     <tr>
-                        <th className="border border-gray-300 bg-gray-100 py-2 px-4">Name</th>
-                        <th className="border border-gray-300 bg-gray-100 py-2 px-4">Type</th>
-                        <th className="border border-gray-300 bg-gray-100 py-2 px-4">Required</th>
-                        <th className="border border-gray-300 bg-gray-100 py-2 px-4">Description</th>
+                        <th className="border border-gray-300 bg-gray-200 py-2 px-4">Name</th>
+                        <th className="border border-gray-300 bg-gray-200 py-2 px-4">Type</th>
+                        <th className="border border-gray-300 bg-gray-200 py-2 px-4">Required</th>
+                        <th className="border border-gray-300 bg-gray-200 py-2 px-4">Description</th>
                     </tr>
                 </thead>
                 <tbody>
