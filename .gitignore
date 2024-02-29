@@ -1,8 +1,8 @@
 node_modules
 dist
-build
 /playwright/.cache/
 examples/
 __snapshots__/
 .history
 docs
+test-results
