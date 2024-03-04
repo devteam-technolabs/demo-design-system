@@ -24,7 +24,8 @@
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "prepublishOnly": "npm run build",
     "test": "playwright test -c playwright-ct.config.ts",
-    "postinstall": "npx playwright install"
+    "postinstall": "npx playwright install",
+    "prepare":"npm run build && npm run build:styles"
   },
   "author": "",
   "license": "ISC",
